@@ -18,5 +18,7 @@ public class BukuMain18 {
         Buku18 bk2 = new Buku18("Self Reward", "Maheera Ayesha", 160, 29, 59000);
         bk2.terjual(11);
         bk2.tampilInformasi();
+
+        Buku18 bukuNaufal = new Buku18("Emotion Control", "Naufal Pratomo", 999, 98, 199000);
     } 
 }
