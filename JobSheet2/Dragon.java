@@ -22,7 +22,7 @@ public class Dragon {
 
     void moveUp(){
         if (y>0&&y<height) {
-            y+=1;
+            y-=1;
         } else {
             detectCollision();
         }
@@ -30,7 +30,7 @@ public class Dragon {
 
     void moveDown(){
         if (y>0&&y<height) {
-            y-=1;
+            y+=1;
         } else {
             detectCollision();
         }
