@@ -9,15 +9,13 @@ public class dragonMain {
         player.width=5;
         player.height=5;
 
-        player.moveUp();
-        player.printPosition();
         player.moveDown();
+        player.printPosition();
+        player.moveRight();
         player.printPosition();
         player.moveLeft();
         player.printPosition();
         player.moveUp();
-        player.printPosition();
-        player.moveRight();
         player.printPosition();
     }
 }
