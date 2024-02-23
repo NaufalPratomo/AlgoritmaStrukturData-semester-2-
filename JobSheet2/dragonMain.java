@@ -17,5 +17,7 @@ public class dragonMain {
         player.printPosition();
         player.moveUp();
         player.printPosition();
+        player.moveUp();
+        player.printPosition();
     }
 }
