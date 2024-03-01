@@ -1,4 +1,4 @@
-package JobSheet3.LatihanPraktikum;
+package JobSheet3.LatihanPraktikum1;
 
 public class bola {
     
