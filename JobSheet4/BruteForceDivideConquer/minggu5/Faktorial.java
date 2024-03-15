@@ -1,4 +1,4 @@
-package BruteForceDivideConquer.minggu5;
+package JobSheet4.BruteForceDivideConquer.minggu5;
 
 public class Faktorial {
 
