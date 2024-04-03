@@ -44,7 +44,6 @@ public class PencarianBuku18 {
             else
                 right = mid - 1;
         }
-
         return -1;
     }
 
