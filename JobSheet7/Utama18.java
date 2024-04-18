@@ -17,7 +17,9 @@ public class Utama18 {
             System.out.println("2. Ambil Barang");
             System.out.println("3. Tampilkan tumpukan barang");
             System.out.println("4. Lihat barang teratas");
-            System.out.println("5. Keluar");
+            System.out.println("5. Lihat barang terbawah");
+            System.out.println("6. Cari barang");
+            System.out.println("7. Keluar");
             System.out.print("Pilih operasi: ");
             int pilihan = scanner.nextInt();
             scanner.nextLine();
@@ -43,7 +45,20 @@ public class Utama18 {
                 case 4:
                     gudang.lihatBarangTeratas();
                     break;
-                case 5:
+                    case 5:
+                    gudang.lihatBarangTerbawah();
+                    break;
+                case 6:
+                    System.out.print("Masukkan kode atau nama barang yang dicari: ");
+                    String kodeAtauNama = scanner.nextLine();
+                    try {
+                        int kodeBarang = Integer.parseInt(kodeAtauNama);
+                        gudang.cariBarang(kodeBarang, null);
+                    } catch (NumberFormatException e) {
+                        gudang.cariBarang(-1, kodeAtauNama);
+                    }
+                    break;
+                case 7:
                     break;
                 default:
                     System.out.println("Pilihan tidak valid, silahkan coba lagi.");
