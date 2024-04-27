@@ -46,11 +46,11 @@ public class Queue {
             int i = front;
             while (i != rear) {
                 System.out.print(data[i].norek+" "+data[i].nama
-                +" "+data[i].alamat+" "+data[i].umur+" "+data[i].saldo);
+                +" "+data[i].alamat+" "+data[i].umur+" "+data[i].saldo+ "\n");
                 i = (i + 1) % max;
             }
             System.out.println(data[i].norek+" "+data[i].nama
-            +" "+data[i].alamat+" "+data[i].umur+" "+data[i].saldo);
+            +" "+data[i].alamat+" "+data[i].umur+" "+data[i].saldo+ "\n");
             
             System.out.println("Jumlah elemen = " + size);
         }
