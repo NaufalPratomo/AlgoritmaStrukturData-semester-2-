@@ -1,6 +1,6 @@
 package JobSheet11;
 
-public class BinaryTreeArrayMain18 {
+public class BinaryTreeArrayMain18 { 
 
     public static void main(String[] args) {
         BinaryTreeArray18 bta = new BinaryTreeArray18();
