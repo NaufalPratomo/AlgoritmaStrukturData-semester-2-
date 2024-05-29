@@ -11,7 +11,7 @@ public class BinaryTreeArray18 {
     void populateData(int data[], int idxLast) {
         this.data = data;
         this.idxLast = idxLast;
-    }
+    } 
 
     public void traverseInOrder(int idxStart) {
         if (idxStart <= idxLast) {

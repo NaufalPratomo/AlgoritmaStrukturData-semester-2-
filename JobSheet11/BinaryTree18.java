@@ -23,7 +23,7 @@ public class BinaryTree18 {
                     } else {
                         current.left = new Node18(data);
                         break;
-                    }
+                    } 
                 } else if (data > current.data) {
                     if (current.right != null) {
                         current = current.right;
