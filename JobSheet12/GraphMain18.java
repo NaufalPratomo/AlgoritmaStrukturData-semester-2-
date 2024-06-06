@@ -12,5 +12,6 @@ public class GraphMain18 {
         gedung.printGraph();
         gedung.removeEdge(1, 3);
         gedung.printGraph();
+        gedung.isAdjacent(0, 0);
     }
 }
