@@ -15,14 +15,16 @@ public class Graph18 {
     }
 
     public void degree(int asal) {
-        int k,totalIn = 0, totalOut = 0;
+        int k, totalIn = 0, totalOut = 0;
         for (int i = 0; i < vertex; i++) {
+            // inDegree
             for (int j = 0; j < list[i].size(); j++) {
                 if (list[i].get(j) == asal) {
-                    totalIn++;
+                    ++totalIn;
                 }
             }
-            for ( k = 0; k < list[asal].size(); k++) {
+            // outDegree
+            for (k = 0; k < list[asal].size(); k++) {
                 list[asal].get(k);
             }
             totalOut = k;
