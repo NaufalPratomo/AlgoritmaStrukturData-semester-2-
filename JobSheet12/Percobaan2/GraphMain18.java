@@ -14,5 +14,6 @@ public class GraphMain18 {
         System.out.println("Hasil setelah penghapusan edge");
         gedung.removeEdge(2, 1);
         gedung.printGraph();
+        gedung.degree(0);
     }
 }

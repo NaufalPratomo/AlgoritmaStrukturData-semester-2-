@@ -2,7 +2,7 @@ package Percobaan2;
 
 public class GraphMatriks18 {
     int vertex;
-    int [][] matriks;
+    int[][] matriks;
 
     public GraphMatriks18(int v) {
         vertex = v;
@@ -14,7 +14,7 @@ public class GraphMatriks18 {
     }
 
     public void removeEdge(int asal, int tujuan) {
-        matriks[asal][tujuan] = -1;
+        matriks[asal][tujuan] = 0;
     }
 
     public void printGraph() {
@@ -27,5 +27,22 @@ public class GraphMatriks18 {
             }
             System.out.println();
         }
+    }
+
+    public void degree(int asal) {
+        int totalIn = 0, totalOut = 0;
+        for (int i = 0; i < vertex; i++) {
+            // inDegree
+            if (matriks[i][asal] != 0) {
+                ++totalIn;
+            }
+            // outDegree
+            if (matriks[asal][i] != 0) {
+                ++totalOut;
+            }
+        }
+        System.out.println("InDegree dari gedung " + (char) ('A' + asal) + ": " + totalIn);
+        System.out.println("OutDegree dari gedung " + (char) ('A' + asal) + ": " + totalOut);
+        System.out.println("Degree dari Gedung " + (char) ('A' + asal) + ": " + (totalIn + totalOut));
     }
 }
